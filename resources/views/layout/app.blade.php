@@ -57,8 +57,8 @@
                     <span>Kasir</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/sementara') }}">
-                    <i class="fa-solid fa-gear"></i>
+                <a class="nav-link" href="{{ url('/tentang') }}">
+                    <i class="fa-solid fa-users-line"></i>
                     <span>Tentang</span></a>
             </li>
             <!-- Divider -->

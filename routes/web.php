@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Barang;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Kasir;
+use App\Http\Controllers\Tentang;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -42,4 +43,6 @@ Route::middleware('auth')->group(function () {
     Route::post('/kasir/tambah', [Kasir::class, 'store'])->name('kasir.store');
     Route::get('/struk/{id}', [Kasir::class, 'struk'])->name('kasir.struk');
     Route::get('/history', [Kasir::class, 'history'])->name('kasir.history');
+    //tentang
+    Route::get('/tentang', [Tentang::class, 'tampil'])->name('tentang.tampil');
 });
